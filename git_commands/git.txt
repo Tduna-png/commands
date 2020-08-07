@@ -1,0 +1,102 @@
+# Source
+URL: https://dzone.com/articles/top-20-git-commands-with-examples
+
+# Sets the author name and email address for commits
+git config --global user.name "Tduna"
+git config --global user.email "Tdnua-png@Ggmail.com"
+
+# Start a new repository
+git init /home/new_projects/gitlab
+
+# Obtain a repository from an existing URL
+git clone https://github.com/Tduna-png/commands/new/master.git
+
+# Add file to staging
+git add project_1
+
+# Add all changes/files for staging
+git add *
+
+# Commit and commit message i.e. record/snapshot file permanently in the version history
+git commit -m "First git commit"
+
+# Commit any files you've added with the git add command and also commits any files you've changed since then
+git commit -a
+
+# Shows file differences which are not yet staged
+git diff
+
+# Shows the differences between files in the staging area and the latest version present
+git diff --staged
+
+# Shows the difference between the two branches
+git diff [first branch][second branch]
+git diff branch_1 branch_2
+
+# This command unstages the file, but it preserves the file contents
+git reset [file]
+git reset file.pp
+
+# Discards all history and goes back to the specified commit
+git reset --hard [commit]
+
+# This command lists all the files that have to be committed.
+git status
+
+# This command deletes the file from your working directory and stages the deletion
+git rm [file]
+
+# This command is used to list the version history for the current branch.
+git log
+
+# This command lists version history for a file, including the renaming of files also
+git log --follow file_1
+
+# This command shows the metadata and content changes of the specified commit.
+git show [commit]
+
+# This command is used to give tags to the specified commit
+git tags [commitID]
+
+# This command lists all the local branches in the current repository
+git branch
+
+# This command creates a new branch
+git branch [branch name]
+
+# This command is used to switch from one branch to another.
+git checkout [branch name]
+
+# This command is used to create a new branch and also switches to it.
+git checkout -b [branch name]
+
+# This command is used to connect your local repository to the remote server.
+git remote add [variable name][Remote Server Link]
+git remote add origin https://github.com/TDuna/Demo.git
+
+# This command sends the committed changes of master branch to your remote repository
+git push [variable name] master
+git push origin master
+
+# This command sends the branch commits to your remote repository
+git push [variable name][branch]
+git push origin master
+
+# This command deletes a branch on your remote repository
+git push [variable name] : [branch name]
+git push origin : branch_2
+
+# This command fetches and merges changes on the remote server to your working directory
+git pull [repository link]
+
+# This command temporarily stores all the modified tracked files
+git stash save
+
+# This command restores the most recently stashed files
+git stash pop
+
+# This command lists all stashed changesets
+git stash list
+
+# This command discards the most recently stashed changeset
+git stash drop
